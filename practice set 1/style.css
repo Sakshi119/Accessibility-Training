@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background: #007acc;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background: #005b99;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+nav ul li a:hover {
+    background: #004080;
+    border-radius: 5px;
+}
+
+/* Skip to Main Content */
+/* .skip-link {
+    position: absolute;
+    left: -999px;
+    top: 10px;
+    background: yellow;
+    padding: 10px;
+    z-index: 100;
+    font-weight: bold;
+} */
+
+/* .skip-link:focus {
+    left: 10px;
+} */
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Default Font Sizes */
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+li {
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* High Contrast Mode */
+.high-contrast {
+    background-color: black !important;
+    color: mediumspringgreen !important;
+}
+.high-contrast main,
+.high-contrast header {
+    background: #343434;
+}
+.high-contrast header{
+    color: mediumspringgreen;
+}
+.high-contrast .button,
+.high-contrast .skip-link{
+    background: #000000;
+    color: mediumspringgreen;
+}
+.high-contrast nav{
+    background: #000000;
+}
+.high-contrast nav ul li a{
+    color: mediumspringgreen;
+}
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+.dark-mode main,
+.dark-mode header {
+    background: #343434;
+}
+.dark-mode header{
+    color:white;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background: #007acc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.button:hover {
+    background: #005b99;
+}
+
+/* Skip LINK */
+.skip-link {
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    background: #007acc;
+    padding: 10px;
+    color: white;
+}
+.skip-link:focus {
+    background-color: #004080;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        width: 90%;
+    }
+}

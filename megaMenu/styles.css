@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+}
+
+/* Mega Menu */
+.mega-menu {
+    background: #333;
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.menu > li {
+    position: relative;
+    margin-right: 20px;
+}
+
+/* Menu Buttons */
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-button:focus,
+.menu-button:hover {
+    text-decoration: underline;
+}
+.menu a {
+    color: yellow;
+}
+/* Submenu Styling */
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    display: none; /* Initially hidden */
+}
+
+.submenu li {
+    padding: 5px 10px;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: black;
+}
+
+.submenu a:focus,
+.submenu a:hover {
+    background: #ddd;
+}
+
+/* Show Submenu when Active */
+.menu > li.open .submenu {
+    display: block;
+}
+
+/* Accessibility Focus */
+.menu a, .menu-button {
+    outline: none;
+}
+
+.menu a:focus, .menu-button:focus {
+    outline: 2px solid yellow;
+}

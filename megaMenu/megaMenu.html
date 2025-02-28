@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Mega Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="mega-menu" aria-label="Main Navigation">
+        <ul class="menu">
+            <li>
+                <button class="menu-button" aria-haspopup="true" aria-expanded="false">
+                    Products
+                </button>
+                <ul class="submenu" role="menu">
+                    <li role="menuitem"><a href="#">Laptops</a></li>
+                    <li role="menuitem"><a href="#">Phones</a></li>
+                    <li role="menuitem"><a href="#">Accessories</a></li>
+                </ul>
+            </li>
+            <li>
+                <button class="menu-button" aria-haspopup="true" aria-expanded="false">
+                    Services
+                </button>
+                <ul class="submenu" role="menu">
+                    <li role="menuitem"><a href="#">Consulting</a></li>
+                    <li role="menuitem"><a href="#">Support</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" role="menuitem">About Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

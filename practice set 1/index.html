@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility Training</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <a href="#maincontent" class="skip-link" tabindex="100" area-label="Skip to Main Content button">Skip to Main Content</a>
+    <header>
+        <h1>Welcome to Accessibility Training</h1>
+    </header>
+    <nav>
+        <ul>         
+            <li><a href="#" tabindex="1" aria-label="Go to Home Page">Home</a></li>
+            <li><a href="#" tabindex="2" aria-label="Go to About Us Page">About</a></li>
+            <li><a href="#" tabindex="3" aria-label="Go to Contact Page">Contact</a></li>
+        </ul>
+    </nav>
+    <main id="maincontent">
+        <div class="font-size-buttons">
+            <h2>Adjust the Font Size</h2>
+            <button class="button" area-label="Increase Font Size button" onclick="changeFontSize(2)" tabindex="4">A+</button>
+            <button class="button" onclick="resetFontSize()" tabindex="5" area-label="Reset Font Size button">A</button>
+            <button class="button" onclick="changeFontSize(-2)" tabindex="6" area-label="Decrease Font Size button" >A-</button>
+            <button class="button" onclick="toogleDarkMode()" tabindex="7" area-label="Toggle Dark Mode button">Toggle Dark Mode</button>
+            <button class="button" onclick="toogleContrastMode()" tabindex="8" area-label="Toggle Contrast mode">Toggle Contrast Mode</button>
+        </div>
+        <div class="text-content" tabindex="9">
+            <h2>Introduction to Web Accessibility</h2>
+            <p>This training will cover AA Accessibility standards for websites.</p>
+            <h2>About This Training</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at malesuada ligula.</p>
+            <p>Web accessibility is important for inclusivity and ensures equal access to content for all users.</p>
+            <ul>
+                <li>Use semantic HTML</li>
+                <li>Provide alternative text for images</li>
+                <li>Ensure good color contrast</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+                fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                justo. Nullam dictum felis eu pede mollis pretium.</p>
+            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+                ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+                feugiat a, tellus.</p>
+            <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo
+                ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+                feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
+                ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas
+                tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
+                Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt
+                tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
+                faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed
+                consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+        </div>
+        
+    </main>    
+    <footer>
+        <p tabindex="10">&copy; 2025 Accessibility Training</p>
+    </footer>
+
+    <script src="script.js" rel="script"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Drag & Drop</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Accessible Drag & Drop</h1>
+    <p id="instructions">Use the arrow keys to move between items. 
+        Press Enter or Space to select an item and move it to a drop zone.</p>
+
+
+    <div class="container">
+        <ul class="draggable-list" role="listbox" aria-labelledby="instructions" id="drag-list">
+            <li class="draggable" tabindex="0" role="option" aria-describedby="drag-status" draggable="true">Iteam 1</li>
+            <li class="draggable" tabindex="0" role="option" aria-describedby="drag-status" draggable="true">Iteam 2</li>
+            <li class="draggable" tabindex="0" role="option" aria-describedby="drag-status" draggable="true">Iteam 3</li>           
+        </ul>
+
+        <div class="drop-container-container">
+            <div class="drop-zone" tabindex="0" aria-label="Drop Zone 1" role="region"></div>
+            <div class="drop-zone" tabindex="0" aria-label="Drop Zone 2" role="region"></div>
+        </div>
+       
+    </div>
+    <div aria-live="polite" id="drag-status" class="sr-only"></div>
+    
+    <script src="script.js" rel="script"></script>  
+</body>
+</html>

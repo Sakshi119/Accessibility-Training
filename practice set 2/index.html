@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="center-nav">
+            <a href="#" aria-label="Go to Home Page">Home</a>
+            <a href="#" aria-label="Go to About Us Page">About</a>
+            <a href="#" aria-label="Go to Contact Page">Contact</a>
+        </div>
+        <div class="right-nav">
+            <button class="button-secondary" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
+            <button class="button-circle" aria-label="Increase Font Size">A+</button>
+            <button class="button-circle" aria-label="Reset Font Size">A</button>
+            <button class="button-circle" aria-label="Decrease Font Size">A-</button>
+        </div>
+    </nav>
+
+    <section id="signupBlock" class="section-wrap">
+        <main>
+            <h1>Welcome to My Website</h1>
+            <p>Click the button below to continue.</p>
+            <button class="button" aria-label="Click to know more" href="#signUpForm">Know More</button>
+        </main>
+    
+        <form id="signUpForm">
+            <h1>Sign Up</h1>
+            <div class="form-group">
+                <label id="name-id">Enter your Name: </label>
+                <input type="text" placeholder="Enter your name" arial-labelledby="name-id">
+            </div>
+            <div class="form-group">
+                <label id="email-id">Enter your Email: </label>
+                <input type="email" placeholder="Enter your email" aria-labelledby="email-id">
+            </div>
+            <button class="button" aria-label="Submit signup form">Submit</button>
+        </form>
+    </section>
+    
+    <script src="script.js" rel="script"></script>
+</body>
+</html>
